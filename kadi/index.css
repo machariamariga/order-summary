@@ -1,0 +1,116 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+body {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-color: hsl(225, 100%, 94%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 15px 10px hsla(245, 75%, 52%, 10%);
+}
+
+#plan {
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+h1, p, button, a, #plan_info {
+    text-align: center;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+#plan_info {
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#proceed {
+    display: block;
+    margin: auto;
+    color: white;
+    background-color:  hsl(245, 75%, 52%);
+    width: 80%;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0px 15px 10px hsla(245, 75%, 52%, 20%);
+}
+
+#cancel {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: hsl(224, 23%, 55%);
+}
+
+p {
+    text-align: center;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    margin: auto;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+a {
+    font-weight: 500;
+    color: blue;
+    margin-left: 100px;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+#price {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+#cancel:hover {
+    color: black;
+}
+
+a:hover {
+    text-decoration: unset;
+    opacity: 0.85;
+}
+
+#proceed:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 800px) {
+    p {
+        width: 260px;
+    }
+
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+    }
+}
